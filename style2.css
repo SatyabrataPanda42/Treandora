@@ -1,104 +1,130 @@
-*{
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(shopping-cart-blue-background_601748-20411.avif) no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #f8fafa, #99a2a2);
 }
-.wrapper{
-  width: 420px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2);
-  backdrop-filter: blur(9px);
-  color: #fff;
+
+.wrapper {
+  background: #070435;
+  padding: 25px 30px;
   border-radius: 12px;
-  padding: 30px 40px;
-}
-.wrapper h1{
-  font-size: 36px;
+  box-shadow: 0 5px 10px rgba(246, 243, 243, 0.15);
+  width: 350px;
   text-align: center;
 }
-.wrapper .input-box{
-  position: relative;
-  width: 100%;
-  height: 50px;
-  
-  margin: 30px 0;
-}
-.input-box input{
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fff;
-  padding: 20px 45px 20px 20px;
-}
-.input-box input::placeholder{
-  color: #fff;
-}
-.input-box i{
-  position: absolute;
-  right: 20px;
-  top: 30%;
-  transform: translate(-50%);
-  font-size: 20px;
 
+.wrapper h1 {
+  font-size: 24px;
+  color: #fbf8f8;
+  margin-bottom: 20px;
 }
-.wrapper .remember-forgot{
+
+.input-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #efeded;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #f4f8f9;
+}
+
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #f0eded;
+  cursor: pointer;
+}
+
+.remember-forgot {
   display: flex;
   justify-content: space-between;
-  font-size: 14.5px;
-  margin: -15px 0 15px;
+  font-size: 14px;
+  margin: 10px 0;
 }
-.remember-forgot label input{
-  accent-color: #fff;
-  margin-right: 3px;
 
-}
-.remember-forgot a{
-  color: #fff;
+.remember-forgot a {
   text-decoration: none;
-
+  color: #fafafb;
 }
-.remember-forgot a:hover{
+
+.remember-forgot a:hover {
   text-decoration: underline;
 }
-.wrapper .btn{
+
+.btn {
   width: 100%;
-  height: 45px;
-  background: #fff;
+  background: #575a5a;
+  color: rgb(245, 241, 241);
   border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  cursor: pointer;
+  padding: 10px;
   font-size: 16px;
-  color: #333;
-  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.wrapper .register-link{
-  font-size: 14.5px;
-  text-align: center;
-  margin: 20px 0 15px;
 
+.btn:hover {
+  background: #ffffff;
+  color: black;
 }
-.register-link p a{
-  color: #fff;
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
-.register-link p a:hover{
+
+.register-link a:hover {
   text-decoration: underline;
+}
+.remember-forgot label{
+  color: #ffffff;
+}
+.register-link p{
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .wrapper {
+    width: 90%;
+  }
 }
